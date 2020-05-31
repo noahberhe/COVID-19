@@ -15,15 +15,14 @@ NLP applied to recent Coronavirus / COVID19 tweets: How has sentiment progressed
 - Use the Logistic Regression as the basis to then analyse each winner / loser: by moving to a Bayesian beta-binomial model and animating the progression over time of the posterior beta distribution
 
 # Results:
-
-### Lockdown: The Winners and Losers
+# Lockdown: The Winners and Losers
 - __Amazon__: as we mentioned, it started off in neutral territory: 0.5. But jumped into positive territory almost immediately after the lockdown, and stayed.
 - __Cummings__: Very interesting to see, e.g. you can run this for Cummings and see how his stock has fallen over the lockdown period. This had already started by a week into the lockdown, which perhaps shows the prior belief (informed by tweets prior to lockdown) was not in line with what we would come to later understand of public feeling towards him. In the last few days, with the story that he broke the lockdown, the posterior makes a dramatic shift to the left, crossing over into <0.5 territory and rapidly becoming peaked at ~0.4
 - __SocialDistancing__: Very quickly became positive, and stayed positive, showing the focused mood of a nation.
 - __Government__: no prior belief about views on the Government, however after immediately seeing positive sentiment in the lockdown period, we started to see that normalise back towards 0.5 and settling just above that level. Mixed views here, started strong but faded.
 - __Keir Starmer__: has been a big Loser from the Coronavirus period, with many Labour supporters unhappy at his support of the government's approach, and of course those on Conservative side bound to be against him.
 
-### Conclusion
+# Conclusion
 - __In conclusion__, we showed that it's possible to set up a feed in from Twitter, apply some text processing, conduct sentiment scoring, and analyse the per-entity sentiment, in a way that clarifies the winners / losers.
 - __Hypothesis Testing__: used this extensively to understand bring some statistical clarity to my findings, which taught me a few areas to be cautious about:
     - __p-values__: can be easily made to be statistically significant if the sample size if large enough to ensure a low enough standard error, ask yourself if your test is specific enough to ask a pointed question? Ask yourself if your filtering is set up correctly, ensuring your sample isn't inflated.
