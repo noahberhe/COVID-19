@@ -36,3 +36,11 @@ NLP applied to recent Coronavirus / COVID19 tweets: How has sentiment progressed
     - This showed clearly how/when Cummings and Starmer sentiment started to deteriorate, giving some good explanation.
     - It also clearly showed certainty of our posterior beliefs, by attaching a probability distribution to the sentiment at each stage.
     - The Beta-Binomial model was used which simplified the parameters greatly, a good way to view this conjugacy is that the binomial distribution is just the discrete version of the beta ditribution, and therefore simply reflects the addition of individual new data-points to the continuous prior. This is solved mathematically as the update of the beta parameter by addition of the binomial parameter.
+
+# Future enhancements
+- This has hope of being modularized such that it's generalizable as a Twitter monitor, which has the below capabilities:
+    - New tweets come in, they are post-processed using spacy and vader.
+    - We are able to conduct some hypothesis tests on sections of the data.
+    - We can provide a holistic view through Logistic Regression
+    - We can view Bayesian Updating in an animation for a chosen entity.
+- I also want to learn a bit more about spacy, and see if it's possible to train the Entity Recognizer better such that any capitalized word isn't mistaken for an entity
